@@ -9,5 +9,4 @@
   ```
 
 # Required envs
-- `HOSTS` - comma-separated urls to backend apps
-- `AUTH_TOKEN` - authentication token for ERP endpoints
+- `TEST_COVERAGE_REPORTER_TOKEN` - authentication token for ERP endpoints
