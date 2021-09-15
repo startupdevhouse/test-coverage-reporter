@@ -1,7 +1,6 @@
 #!/usr/bin/crystal
 
 require "json"
-require "uri"
 require "http/client"
 
 unless File.exists?("./coverage/.last_run.json")
@@ -33,8 +32,9 @@ hosts.each do |host|
       body: { "repository_name" => ENV["GITHUB_REPOSITORY"], "coverage_percent" => test_coverage }.to_json
     )
     channel.send(nil)
-  rescue ex : Socket::Addrinfo::Error
+  rescue ex : Socket::Addrinfo::Error | KeyError
     puts ex.message
+    channel.send(nil)
   end
 end
 

@@ -5,7 +5,7 @@
 
 # How to compile release build
   ```
-  docker run --rm -it -v $PWD:/workspace -w /workspace crystallang/crystal:latest-alpine crystal build src/app.cr --static -o test_coverage_reporter
+  docker run --rm -it -v $PWD:/workspace -w /workspace crystallang/crystal:latest-alpine crystal build src/app.cr --release -o test-coverage-reporter --static --no-debug
   ```
 
 # Required envs
