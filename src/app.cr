@@ -17,9 +17,9 @@ unless test_coverage
 end
 
 hosts = [
-  "https://review-sdh-staging.herokuapp.com/api/webhooks/EiKem3u2mqNUe5m7ouR1S5A4/github/test_coverage_reporter",
-  "https://review-sdh-beta.herokuapp.com/api/webhooks/D4SP1BsTpm9XRtM7rE7UB7FE/github/test_coverage_reporter",
-  "https://review-sdh.herokuapp.com/api/webhooks/D4SP1BsTpm9XRtM7rE7UB7FE/github/test_coverage_reporter",
+  "https://backend.erp-staging.startuphouse.dev/api/webhooks/EiKem3u2mqNUe5m7ouR1S5A4/github/test_coverage_reporter",
+  "https://backend.erp-beta.startuphouse.dev/api/webhooks/D4SP1BsTpm9XRtM7rE7UB7FE/github/test_coverage_reporter",
+  "https://backend.erp-production.startuphouse.dev/api/webhooks/D4SP1BsTpm9XRtM7rE7UB7FE/github/test_coverage_reporter",
 ]
 
 channel = Channel(Nil).new
